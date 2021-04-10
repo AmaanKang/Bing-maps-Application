@@ -12,6 +12,9 @@ This file is the index file of the banking app from where the user can login or 
     <title>Hamilton Banks</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://www.bing.com/api/maps/mapcontrol?key=At1TT5gCf3lYynWWhSQck2S5eI3sHkxLgDih_vC86D_zoCqC0OgLFjGNUiCIdzKi&callback=loadMapScenario"
+        async defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -59,8 +62,8 @@ This file is the index file of the banking app from where the user can login or 
             <h1>Description</h1>
         </div>
         <div class="row">
-            <div class="col-md-6" id="aMap">
-                <h1>Here is map</h1>
+            <div class="col-md-6" style="width:500px;height:600px;" id="aMap">
+                <h4 id="error"></h4>
             </div>
             <div class="col-md-6" id="dirPanel">
                 <h1>Here is Directions</h1>
