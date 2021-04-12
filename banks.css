@@ -1,0 +1,13 @@
+body{
+    margin-left:10px;
+    margin-right:10px;
+}
+#aMap{
+    width:500px;
+    height:600px;
+}
+#dirPanel{
+    visibility: hidden;
+    height:600px;
+    overflow-y: scroll;
+}

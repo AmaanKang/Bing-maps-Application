@@ -62,7 +62,7 @@ This file is the index file of the banking app from where the user can login or 
             <h1>Description</h1>
         </div>
         <div class="row">
-            <div class="col-md-6" style="width:500px;height:600px;" id="aMap">
+            <div class="col-md-6" id="aMap">
                 <h4 id="error"></h4>
             </div>
             <div class="col-md-6" id="dirPanel">
@@ -72,18 +72,24 @@ This file is the index file of the banking app from where the user can login or 
         <div class="row">
             <div class="col-md-6">
                 <h3>Search for a Bank</h3>
-                <form>
-                    <input type="text" name="searchKey"/>
+                <form id="searchForm">
+                    <input type="text" name="searchName"/>
+                    <input type="text" name="searchAddress"/>
                     <input type="submit" name="searchBtn" value="Search"/>
                 </form>
+                <h3 id="searchError"></h3>
             </div>
             <div class="col-md-6">
                 <h3>Add a missing Location</h3>
-                <form>
-                    <input type="text" name="locationName"/></br>
-                    <input type="text" name="locationAddress"/></br>
+                <form id="addForm">
+                    Name: <input type="text" name="locationName"/></br>
+                    Address: <input type="text" name="locationAddress"/></br>
+                    City: <input type="text" name="locationCity"/></br>
+                    Province: <input type="text" name="locationProv"/></br>
+                    PostalCode: <input type="text" name="locationCode"/></br>
                     <input type="submit" name="addBtn" value="Add to Map"/>
                 </form>
+                <h3 id="addError"></h3>
             </div>
         </div>
         <div class="row">
