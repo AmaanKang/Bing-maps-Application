@@ -30,6 +30,7 @@ Hamilton Banks is an application that helps users to look for different bank loc
     </script>
     <script>
         function deleteRow(id){
+            console.log(id);
             fetch("removeLocation.php?id="+id).then(response => response.json())
             .then(displayTableFav);
                     

@@ -3,17 +3,17 @@
  * I, Amandeep Kaur, student number 000822179, certify that this material is my original work. No other person's work has been used without due acknowledgment and 
  * I have not made my work available to anyone else.
  * 
- * Gets all the bank locations from database.
+ * Returns an array of all the locations present in favourites table in backend.
  */
 include "connect.php";
-$command = "SELECT * FROM locations";
+$command = "SELECT * FROM favourites";
 $stmt = $dbh->prepare($command);
 $success = $stmt->execute();
 $locationArray = [];
 if($success){
     while ($row = $stmt->fetch()) {
         $record = 
-        ["bankId"=>$row["bankId"],
+        ["bankId"=>$row["favBankId"],
          "name"=>$row["name"],
          "address"=>$row["address"],
          "city"=>$row["city"],

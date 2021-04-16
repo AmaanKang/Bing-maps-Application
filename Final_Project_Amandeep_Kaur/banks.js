@@ -74,6 +74,7 @@ function loadMapScenario(){
              * @param {longitude} pinLong 
              */
         function showDirections(pinLat, pinLong) {
+            console.log("I am in");
             document.getElementById("dirPanel").style.display = "block";
             directionsManager.removeWaypoint(firstWaypoint);
             directionsManager.removeWaypoint(secondWaypoint);
