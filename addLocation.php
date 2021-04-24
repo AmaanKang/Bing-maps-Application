@@ -1,7 +1,6 @@
 <?php
 /**
- *  I, Amandeep Kaur, student number 000822179, certify that this material is my original work. No other person's work has been used without due acknowledgment and 
- * I have not made my work available to anyone else.
+ * Author:Amandeep Kaur
  * 
  * Adds a location to locations table in backend.
  */
